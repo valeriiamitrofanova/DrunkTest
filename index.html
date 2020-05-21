@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="style" href="style.css" />
+    <title>DRUNK TEST</title>
+  </head>
+  <body>
+    <!--TOP SECTION-->
+    <div class="intro py-3 bg-dark text-center">
+      <div class="container">
+        <h2 class="text-warning display-3 my-4">DRUNK TEST</h2>
+      </div>
+    </div>
+    <!--RESULT SECTION-->
+    <div class="result py-4 d-none bg-warning text-center">
+      <div class="container lead">
+        <p>You are<span class="text-dark display-4 p-3">0%</span>drunk</p>
+      </div>
+    </div>
+
+    <!--QUIZ SECTION-->
+    <div class="quiz py-1 bg-warning">
+      <div class="container">
+        <!-- EMAIL-->
+        <!-- <h2 class="my-1 text-dark">New User Signup</h2>
+        <form class="text-dark">
+            <div class="my-2 text-dark-50">
+                <input type="text" name="username" placeholder="username" class="infovalidation">
+                <p class="lead dont-weight-normal">Username must be  and contain 5 - 12 characters</p>
+
+                <input type="text" name="email" placeholder="email" class="infovalidation">
+                <p class="lead dont-weight-normal">Email must be a valid address, e.g. me@mydomain.com</p>
+            </div>
+        </form> -->
+        <!--EMAIL -->
+        <h2 class="my-1 text-dark">
+          How drunk are you right now? And how about how drunk are you in life?
+          On with the questions...
+        </h2>
+        <form class="quiz-form text-dark">
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              1.Have you had an intoxicating drink today?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">Nah</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label"
+                >Yeah...but it was just a couple of sips</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              2.Have you ever drunk more than five cups of alcohol in one night?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label">Nope. I'm the good one</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label"
+                >In one night? More in one hour!</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              3.Look around you. Are things sliding across the walls?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label">Dude...yeah!</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label">Is that even possible?</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">4.Who do you see while drunk</p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label"
+                >(gasp) PINKY THE PINK ELEPHANT!!!!</label
+              >
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">Double everything.</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              5.Well, this time spin in your chair and answer what do you
+              experience?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="form-check-label">Everything is moving</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label"
+                >That barfing sensation... BLECH!!!! (cough over toilet)</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              6.What's the best word for someone who is totally drunk?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="form-check-label">Me</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q6" value="B" />
+              <label class="form-check-label">Smashed</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              7.Have you ever mixed a beverage like Pepsi with alcohol?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="form-check-label"
+                >Well, once. And I'd do it again</label
+              >
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q7" value="B" />
+              <label class="form-check-label"
+                >How you dare to mix alcohol and fizzy drinks?</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              8.Is this test worth taking anymore?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="form-check-label">Yeah, it's kinda funny!</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q8" value="B" />
+              <label class="form-check-label"
+                >Still can't believe that you asked me about mixing alcohol and
+                Pepsi...</label
+              >
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              9.What feeling do you get when you're drunk?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="form-check-label"
+                >Undying love for everything and everyone...</label
+              >
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q9" value="B" />
+              <label class="form-check-label">Queasiness.</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead dont-weight-normal">
+              10.What is your favorite drink?
+            </p>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="form-check-label">Coke</label>
+            </div>
+            <div class="form-check my-2 text-dark-50">
+              <input type="radio" name="q10" value="B" />
+              <label class="form-check-label">BEEEEER!!!</label>
+            </div>
+          </div>
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="sandbox.js"></script>
+  </body>
+</html>
